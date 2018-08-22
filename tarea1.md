@@ -1,4 +1,4 @@
-# Computo-Movil-2019-1
+# Cómputo-Móvil-2019-1
 ## Marduk Pérez de Lara Dominguez
 ## Tarea 1
 ## 21-08-2018
