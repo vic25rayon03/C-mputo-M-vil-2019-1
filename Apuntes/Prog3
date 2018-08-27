@@ -1,0 +1,60 @@
+//: Playground - noun: a place where people can play
+
+//:<---------------------Condicionales---------------->
+import UIKit
+
+var str = "Hello"
+let hundred = 100
+let tenTimesTen = 10 + 10
+hundred==tenTimesTen
+
+2 < 2
+1 <= 2
+3 > 3
+
+//:-----------------------------------------------------
+//:<-------------------Ejemplo 2------------------------>
+//: Se puede eslabonar utilizando , (comas) dentro del argumento del if
+let videoLength = 4
+if videoLength < 5 {
+    print("Es muy rapido")
+} else {
+print("Esta bien")
+}
+//:-------------------------------------------------------
+//:<-------------------Ejemplo 3-------------------------->
+//:Int (Atributos y metodos)
+//:String (Atributos y metodos)
+//:Double
+//:Bool
+//:Instancias de cadena
+let nombre = "Victor"
+
+//:....................Fecha...............................
+import Foundation //:Tipo de dato date
+let fecha = Date()
+//:...................Inicializador de cadena..............
+var cadena1 = "Hello playground"
+var cadena2 = String()
+//:....................Inicializador de numero entero.............
+let numero = 1
+let numero2 = Int()
+//:....................Inicializador de double....................
+let doble = 5.8
+let doble2 = Double()
+//:....................Inicializador booleano....................
+let opcion = true
+let opcion2 = Bool()
+//:_______________________________Metodos_____________________________________________
+//:Consulta de datos
+cadena.isEmpty
+//:-----------------------------------------------------------------
+cadena.hasPrefix("Hello")
+//: Consulta prefijos dentro de una cadena
+cadena.count
+//:Cuantos caracteres hay
+cadena.append("Victor")
+//: Obtiene la cadena que la cadena tiene, y afecta las propiedades de la instancia
+//:
+//:
+//:
