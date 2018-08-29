@@ -1,1 +1,49 @@
+//: <---------------------------------Arreglos------------------------------------->
 let arreglo = ["a" , "b"]
+//: Propiedad count : Cuenta los elementos que hay en el arreglo
+//: let var = var.count
+//: Arreglo de booleanos, dates, etc. Deben ser del mismo tipo
+//: Utilizar nombres en plural para un arreglo
+//: Los ciclos deben ser finito
+//: ciclo: for
+let friends = ["Name1","Name2","Name3","Name4","Name5"]
+for friend in friends
+{
+    let sparklyFriend = ";+\(friend);+"
+    print("Oye\(sparklyFriend), te invito a mi fiesta el viernes")
+}
+var str = "Hello, playground"
+var list = [String]() //: Arreglo vacio sin elementos (inicializador)
+var name: [String] //: Arreglo preparado
+//: ------------------------Cadenas----------------------------
+list.append("Banana")
+list.insert("Uva", at: 2)
+//: Operador compuesto +=
+//:<----------------------Estructuras--------------------------->
+struct Song
+{
+    let title: String
+    var artist: String
+    let duration: Int
+}
+var cancion = Song (title: Hola, artist: Mundo, duration: 99)
+var cancion2 = Song (title: Adios, artist: Mundo, duration: 000)
+cancion.artist
+
+
+struct Song
+{
+    let title: String //Protegido
+    var title2: String
+    var artist: String
+    let duration: Int
+}
+var cancion = Song (title: "Hola", title2:"Cmbio", artist: "Mundo", duration: 99)
+var cancion2 = Song (title: "Adios", title2:"Cambio", artist: "Mundo", duration: 000)
+cancion.artist
+cancion.title
+cancion2.artist
+cancion2.title
+cancion2.duration
+Song.title2 = "Yes yes"
+//:----------------Propiedad-----------
