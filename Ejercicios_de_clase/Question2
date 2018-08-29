@@ -1,0 +1,36 @@
+struct MyQuestionAnswerer {
+    func responseTo(question: String) -> String {
+        // PENDIENTE: Escribir una respuesta 
+        return "?"
+        func responseTo(question: String) -> String {
+            // PENDIENTE: Escribir una respuesta
+            let question2 = question.lowercased()
+            if question2.hasPrefix("what's your name")
+            {
+              return "I am robot A10"
+            }
+            else if question.hasPrefix("name")
+            {
+                return "A10"
+            }
+            if question.hasPrefix("were are you from")
+            {
+                return "Mexico"
+            }
+            if question.hasPrefix("how are you")
+            {
+                return "Fine, thanks"
+            }
+            if question.hasPrefix("how old are you")
+            {
+                return "21"
+            }
+            if question.hasPrefix("what your favourite color?")
+            {
+                return "Blue and green"
+            }
+        }
+        return "?"
+    }
+    }
+
