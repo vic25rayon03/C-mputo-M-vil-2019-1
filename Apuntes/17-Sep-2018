@@ -1,0 +1,137 @@
+func cookLunch(choice: String) -> String
+{
+  if choice == "pasta"
+    {
+      return "iconpasta"
+    }
+    else if choice == "burger"
+    {
+      return "burgericon"
+    }
+    else
+    return "platoicon"
+}
+cookLunch(choice: "pasta")
+cookLunch(choice: "Fish and Chips")
+cookLunch(choice: "Chocolate")
+
+enum LunchChoice
+{
+  case pasta
+  case burger
+}
+let choice: LunchChoice = .pasta
+//Otro ejemplo
+enum LunchChoice
+{
+  case pasta, burger
+}
+    return "iconpasta"
+//-------------
+// Enum cataloga dentro de una estructura
+import Foundation
+enum Team
+{
+  case red, blue
+}
+enum Position
+{
+  case querterback, fullback, tightEnd
+}
+struct Player
+{
+  var name: String
+  var skillLevel: Int
+  var team: String
+  var position:  String
+}
+let myPlayer = Player (name: "Victor", skillLevel:100, team: .blue, position: tightEnd)
+//-------------
+func cookLunch(choice: LunchChoice) -> String
+{
+  if choice == .pasta
+    {
+      return "iconpasta"
+    }
+    else if choice == .burger
+    {
+      return "burgericon"
+    }
+    // else ---> el enum no necesita de un else, porque lo encierra en un solo argumento 
+    // return "Esta opcion no es valida"
+}
+return "" //Es requerido porque swift lo pide, pero no se utiliza
+let choice1 = cookLunch(.burger)
+//------
+func cookLunch(choice: LunchChoice) -> String
+{
+  switch choice
+  {
+    case .burger : 
+    return "iconburguer"
+    
+    case .pasta: 
+    return "iconpasta"
+    
+    case .papas: 
+    return "iconpotatoes"
+  }
+}
+let choiceVictor: LunchChoice = .burger
+let choiceEduardo: LunchChoice = .burger
+//-------
+enum Quality
+{
+  case bad, poor, acceptable, good, great, horrible
+}
+let quality = Quality.aceptable
+switch quality
+{
+  case .bad:
+    print("That really won't do")
+  case .poor:
+    print("That not good enough")
+  case .great:
+    print("Wow this is incredible!")
+  case. acceptable, .good
+    print ("Ok, I'll take it")
+  case .horrible
+    print ("I am sorry")
+}
+//-------------------------
+enum Suit 
+{
+  case spades, hearts, diamonds, clubs
+  var rank: Int
+  {
+    switch self 
+    {
+      case .spades: return 4
+      case .hearts: return 3
+      case .diamonds: return 2
+      case .clubs: return 1
+    }
+  }
+  var symbol: String
+  {
+    switch self
+    {
+      case .spades:
+      return "iconspades"
+      case .hearts:
+      return "iconheart"
+      case .diamonds:
+      return "icondiamond"
+      case .clubs:
+      return "iconclubs"
+    }  
+  }
+  func beats (_ OtherSuit: Suit) -> Bool
+  {
+    return self.rank > otherSuit.rank
+  }
+}
+let oneSuit = Suit = Suit.spades
+let otherSuit = Suit.clubs
+//: oneSuit.symbol
+oneSuit.beats(otherSuit)
