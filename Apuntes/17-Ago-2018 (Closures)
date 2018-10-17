@@ -1,0 +1,42 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+func sum(numbers:[Int]) -> Int{
+    let total = 0
+    //Codigo necesario para sumar los numeros del arreglo
+    return total
+    
+}
+let sumClosure = {(numbers: [Int])-> Int in
+    var total = 0
+    for number in numbers {
+        total += number
+    }
+    //Codigo necesario para sumar los numeros del arreglo
+    return total
+}
+
+let arregloNumeros = [12, 11, 10, 9, 7]
+print(sum(numbers: arregloNumeros))
+let suma = sumClosure(arregloNumeros)
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+struct Track {
+  var trackNumber: Int
+}
+//: Intanciar dentro del arreglo
+
+let tracks = [Track(trackNumber: 3 ), Track(trackNumber:2), Track(trackNumber:1), Track(trackNumber:4)]
+
+let sortedTracks = tracks.sorted { (track1, track2) throws -> Bool in return track1.trackNumber < track2.trackNumber}
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+let sortedTracks = tracks.sorted { (track1, track2) in return track1.trackNumber < track2.trackNumber}
+
+//:Otra forma
+
+let sortedTracks = tracks.sorted {  $0.trackNumber < $1.trackNumber }
+
